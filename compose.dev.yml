@@ -1,0 +1,13 @@
+services:
+  syncbranch:
+    image: ghcr.io/AWildLeon/SyncBranch:latest
+    environment:
+      Every: 1h
+      PUID: 1000
+      FROM_BRANCH: main
+      TO_BRANCH: upstream
+      FROM_REPO: https://github.com/YourUserName/Repo.git
+      TO_REPO: git@github.com:TargetUser/OtherRepo.git
+    volumes:
+      - ./repo:/repo
+      - ./ssh:/ssh
