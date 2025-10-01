@@ -1,6 +1,6 @@
 services:
   syncbranch:
-    image: ghcr.io/AWildLeon/SyncBranch:latest
+    image: ghcr.io/awildleon/syncbranch:latest
     environment:
       Every: 1h
       PUID: 1000

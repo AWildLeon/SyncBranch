@@ -75,7 +75,7 @@ docker compose down
 
 ### Using Pre-built Image
 
-You can also use the pre-built image from GitHub Container Registry: ``ghcr.io/AWildLeon/SyncBranch:latest``
+You can also use the pre-built image from GitHub Container Registry: ``ghcr.io/awildleon/syncbranch:latest``
 for more details read [compose.yml](compose.yml)
 
 ## How It Works

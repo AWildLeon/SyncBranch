@@ -1,13 +1,13 @@
 services:
   syncbranch:
-    build: .
+    image: ghcr.io/awildleon/syncbranch:latest
     environment:
       Every: 1h
       PUID: 1000
       FROM_BRANCH: main
       TO_BRANCH: upstream
-      FROM_REPO: https://github.com/AWildLeon/TheFlake-Public.git
-      TO_REPO: git@github.com:TeleCentrumNordenGmbH-CoKG/Flake.git
+      FROM_REPO: https://github.com/YourUserName/Repo.git
+      TO_REPO: git@github.com:TargetUser/OtherRepo.git
     volumes:
       - ./repo:/repo
       - ./ssh:/ssh
