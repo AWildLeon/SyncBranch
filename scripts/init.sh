@@ -20,8 +20,8 @@ fi
 
 log_info "Setting ownership and permissions for /repo and /ssh"
 
-chown -R user /repo /ssh
 touch /ssh/known_hosts
+chown -R user /repo /ssh
 
 chmod 600 /ssh/ssh_key
 chmod 644 /ssh/known_hosts
