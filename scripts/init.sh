@@ -21,6 +21,8 @@ fi
 log_info "Setting ownership and permissions for /repo and /ssh"
 
 chown -R user /repo /ssh
+touch /ssh/known_hosts
+
 chmod 600 /ssh/ssh_key
 chmod 644 /ssh/known_hosts
 chmod 600 /ssh/config 2>/dev/null || true  # Config might not exist if empty
